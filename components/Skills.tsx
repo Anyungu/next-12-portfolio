@@ -22,7 +22,7 @@ function Skills({ skills }: Props) {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 2 }}
-        className='flex relative flex-col text-center md:text-left h-screen max-w-full
+        className='flex relative flex-col text-center md:text-left h-screen overflow-hidden max-w-full
         justify-center mx-auto items-center'>
         <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500'>Skills</h3>
 
