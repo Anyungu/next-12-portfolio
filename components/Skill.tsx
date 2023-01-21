@@ -10,7 +10,7 @@ type Props = {
     title?: string
 }
 
-function Skill({ directionLeft, level, logo}: Props) {
+function Skill({ directionLeft, level, logo }: Props) {
     return (
         <motion.div
             initial={{
@@ -29,7 +29,6 @@ function Skill({ directionLeft, level, logo}: Props) {
             <div className='relative flex cursor-pointer w-12 md:w-24 h-12 md:h-24 rounded-full overflow-hidden object-center'>
 
 
-
                 <Image
                     src={logo}
                     alt=""
@@ -40,7 +39,7 @@ function Skill({ directionLeft, level, logo}: Props) {
 
                 />
             </div>
-            <div className='opacity-0 flex cursor-pointer w-12 md:w-24 h-12 md:h-24 rounded-full overflow-hidden object-center group-hover:opacity-70 transition duration-1000 ease-in-out absolute z-20 bg-white'>
+            <div className='opacity-0 flex cursor-pointer w-12 md:w-24 h-12 md:h-24 rounded-full overflow-hidden object-center group-hover:opacity-70 transition duration-1000 ease-in-out absolute z-20 bg-gray-200'>
                 <p className='relative text-lg md:text-2xl font-bold text-black top-3 left-1 md:top-8 md:left-5'>
                     {level}
                 </p>
