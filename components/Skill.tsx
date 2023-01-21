@@ -28,16 +28,14 @@ function Skill({ directionLeft, level, logo }: Props) {
             className='group relative flex cursor-pointer overflow-hidden'>
             <div className='relative flex cursor-pointer w-12 md:w-24 h-12 md:h-24 rounded-full overflow-hidden object-center'>
 
-
-                <Image
+                <img
                     src={logo}
                     alt=""
-                    objectFit="cover"
-                    layout="fill"
                     className='w-auto h-auto filter group-hover:grayscale transition duration-300 ease-in-out absolute z-10'
-                    priority
 
                 />
+
+
             </div>
             <div className='opacity-0 flex cursor-pointer w-12 md:w-24 h-12 md:h-24 rounded-full overflow-hidden object-center group-hover:opacity-70 transition duration-1000 ease-in-out absolute z-20 bg-gray-200'>
                 <p className='relative text-lg md:text-2xl font-bold text-black top-3 left-1 md:top-8 md:left-5'>

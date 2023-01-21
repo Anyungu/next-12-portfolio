@@ -22,7 +22,7 @@ function About() {
             <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500'>About</h3>
 
             <motion.div
-                className='relative w-24 md:w-48 lg:w-full h-24 md:h-48 lg:h-96 rounded-full md:rounded-lg overflow-hidden'
+                className='relative w-24 md:w-48 lg:w-full h-24 md:h-48 lg:h-96 rounded-full lg:rounded-lg'
                 initial={{
                     x: -200,
                     opacity: 0.
@@ -37,13 +37,17 @@ function About() {
 
             >
 
-                <Image
+                <img
+                    src="/sit_adobe_express.jpeg"
+                    alt=""
+                    className='w-24 h-24 md:w-48 md:h-48 rounded-full lg:hidden'
+
+                />
+
+                <img
                     src="/sit.jpg"
                     alt=""
-                    objectFit="cover"
-                    layout="fill"
-                    className=' w-24 md:w-48 lg:w-full h-24 md:h-48 lg:h-96'
-                    priority
+                    className='hidden lg:block lg:w-auto lg:h-auto lg:rounded-lg'
 
                 />
 

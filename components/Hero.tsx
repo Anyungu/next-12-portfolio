@@ -18,13 +18,10 @@ function Hero() {
         <div className='h-screen flex flex-col space-y-8 justify-center text-center overflow-hidden'>
             <HeroCircles />
             <div className="relative w-32 h-32 rounded-full mx-auto">
-                <Image
+                <img
                     src="/laugh.jpg"
                     alt=""
-                    objectFit="cover"
-                    layout="fill"
                     className='w-32 h-32 rounded-full'
-                    priority
 
                 />
 
