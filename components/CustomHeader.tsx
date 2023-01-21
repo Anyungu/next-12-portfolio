@@ -23,8 +23,8 @@ function CustomHeader() {
                 }}
             >
                 {/* Icons */}
-                <SocialIcon url="https://www.linkedin.com/in/anyungu-wanyungu-6aa7b513a/" fgColor='gray' bgColor='transparent' />
-                <SocialIcon url="https://github.com/Anyungu" fgColor='gray' bgColor='transparent' />
+                <SocialIcon url="https://www.linkedin.com/in/anyungu-wanyungu-6aa7b513a/" target="_blank" fgColor='gray' bgColor='transparent' />
+                <SocialIcon url="https://github.com/Anyungu" target="_blank" fgColor='gray' bgColor='transparent' />
             </motion.div>
             <motion.div
                 className='flex flex-row items-center text-gray-300 cursor-pointer'

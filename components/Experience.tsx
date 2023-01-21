@@ -35,7 +35,7 @@ function Experience({ experiences }: Props) {
 
 
 
-            <div className='w-full flex space-x-3 p-10 snap-x snap-mandatory mt-28 md:mt-28 scrollbar overflow-y-hidden overflow-x-scroll scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80'>
+            <div className='w-full flex space-x-3 p-10 snap-x snap-mandatory mt-28 md:mt-28 scrollbar-thin overflow-y-hidden overflow-x-scroll scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80'>
 
                 {experiences.map((e, idx) => (
 
