@@ -49,7 +49,7 @@ const Home: NextPage<{ experiences: ExperiencesData[], skills: SkillsData[] }> =
         <Experience experiences={experiences} />
       </section>
 
-      <section id="skills" className='snap-start'>
+      <section id="skills" className='snap-center'>
         <Skills skills={skills} />
       </section>
 
