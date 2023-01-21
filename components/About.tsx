@@ -2,9 +2,9 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 
-type Props = {}
 
-function About({ }: Props) {
+
+function About() {
     return (
         <motion.div
             className='flex flex-col lg:flex-row relative h-screen text-center lg:text-left max-w-7xl px-10 justify-center tall:justify-evenly pt-5 tall:mt-0  mx-auto items-center'
@@ -43,6 +43,7 @@ function About({ }: Props) {
                     objectFit="cover"
                     layout="fill"
                     className=' w-24 md:w-48 lg:w-full h-24 md:h-48 lg:h-96'
+                    priority
 
                 />
 

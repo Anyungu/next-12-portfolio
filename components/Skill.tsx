@@ -7,10 +7,10 @@ type Props = {
     directionLeft?: boolean,
     level: string,
     logo: string,
-    title: string
+    title?: string
 }
 
-function Skill({ directionLeft, level, logo, title }: Props) {
+function Skill({ directionLeft, level, logo}: Props) {
     return (
         <motion.div
             initial={{
@@ -36,6 +36,7 @@ function Skill({ directionLeft, level, logo, title }: Props) {
                     objectFit="cover"
                     layout="fill"
                     className='w-auto h-auto filter group-hover:grayscale transition duration-300 ease-in-out absolute z-10'
+                    priority
 
                 />
             </div>

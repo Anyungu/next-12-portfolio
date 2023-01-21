@@ -8,7 +8,6 @@ module.exports = {
     extend: {
       screens: {
         'tall': { 'raw': '(min-height: 780px)' },
-        // => @media (min-height: 780px) { ... }
       }
     }
   },

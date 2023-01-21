@@ -1,9 +1,8 @@
 import { motion } from 'framer-motion'
 import React from 'react'
 
-type Props = {}
 
-function HeroCircles({ }: Props) {
+function HeroCircles() {
     return (
         <motion.div
             className='relative flex justify-center items-center'
@@ -11,9 +10,9 @@ function HeroCircles({ }: Props) {
                 opacity: 0,
             }}
             animate={{
-                scale: [1,2,2,3,1],
-                opacity: [0.1,0.2,0.4,0.8,1],
-                borderRadius: ["20%", "20%", "50%", "80%", "20%" ]
+                scale: [1, 2, 2, 3, 1],
+                opacity: [0.1, 0.2, 0.4, 0.8, 1],
+                borderRadius: ["20%", "20%", "50%", "80%", "20%"]
             }}
             transition={{
                 duration: 3

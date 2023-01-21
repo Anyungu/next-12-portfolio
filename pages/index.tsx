@@ -29,14 +29,14 @@ const Home: NextPage<{ experiences: ExperiencesData[], skills: SkillsData[] }> =
     <div className='bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-scroll z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80'>
       <Head>
         <title>Anyungu</title>
-        {/* Icon */}
+
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {/* * Header */}
+
       <CustomHeader />
 
-      {/* * Me  */}
+
       <section id="me" className='snap-start'>
         <Hero />
       </section>
@@ -65,11 +65,15 @@ export async function getStaticProps() {
   // Call an external API endpoint to get posts.
   // You can use any data fetching library
 
-  const res = await Promise.all([fetch('http://localhost:3000/api/experience'), fetch('http://localhost:3000/api/skills')])
+  const res = await Promise.all([
+    fetch('https://api.jsonbin.io/v3/b/63cb9af5c0e7653a055de053'),
+    fetch('https://api.jsonbin.io/v3/b/63cb9ad0ace6f33a22c4cdbb')
+  ])
 
-  const experiences = await res[0].json()
 
-  const skills = await res[1].json()
+  const { experiences } = JSON.parse(await res[0].text()).record
+
+  const { skills } = JSON.parse(await res[1].text()).record
 
 
 

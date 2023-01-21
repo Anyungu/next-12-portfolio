@@ -4,9 +4,8 @@ import HeroCircles from './HeroCircles'
 import Image from 'next/image'
 import Link from 'next/link'
 
-type Props = {}
 
-function Hero({ }: Props) {
+function Hero() {
 
     const [text] = useTypewriter({
         words: ["Hey 🤝🤝, Anyungu here", "Any application that can be written in JavaScript,", "Will eventually be written in JavaScript", "<ReusableComponent/>"],
@@ -25,7 +24,7 @@ function Hero({ }: Props) {
                     objectFit="cover"
                     layout="fill"
                     className='w-32 h-32 rounded-full'
-                    unoptimized
+                    priority
 
                 />
 
